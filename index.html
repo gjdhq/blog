@@ -25,7 +25,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 90%;
-            max-width: 600px; /* Dimensione massima delle card */
+            max-width: 600px;
             overflow: hidden;
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
@@ -108,11 +108,168 @@
 
 <body>
     <header class="it-header-wrapper">
-        <!-- Header content omitted for brevity -->
+        <div class="it-header-slim-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="it-header-slim-wrapper-content">
+                            <a class="d-none d-lg-block navbar-brand" href="#cpc">GJD</a>
+                            <div class="nav-mobile">
+                                <nav aria-label="Navigazione secondaria">
+                                    <a class="it-opener d-lg-none" data-bs-toggle="collapse" href="#menuC1" role="button"
+                                        aria-expanded="false" aria-controls="menuC1">
+                                        <span>GJD central department</span>
+                                        <svg class="icon" aria-hidden="true">
+                                            <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                        </svg>
+                                    </a>
+                                    <div class="link-list-wrapper collapse" id="menuC1">
+                                        <ul class="link-list">
+                                            <li><a class="dropdown-item list-item"
+                                                    href="https://gjdhq.github.io/dashboard/">Allerts - tutte le allerte
+                                                    provvenienti dal DS di GJD</a></li>
+                                            <li><a class="list-item active" href="#" aria-current="page">GJD hq</a></li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="it-header-slim-right-zone">
+                                <div class="nav-item dropdown">
+                                    <div class="dropdown-menu">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="link-list-wrapper">
+                                                    <!-- Contenuto menu a discesa -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="it-access-top-wrapper">
+                                    <a class="btn btn-primary btn-sm" href="#">Admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="it-nav-wrapper">
+            <div class="it-header-center-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="it-header-center-content-wrapper">
+                                <div class="it-brand-wrapper">
+                                    <a href="#">
+                                        <img class="desktop-logo"
+                                            src="https://gabrielsystem.altervista.org/wp-content/uploads/2024/06/icona.png"
+                                            alt="Logo">
+                                        <div class="it-brand-text">
+                                            <div class="it-brand-title">GJD HQ</div>
+                                            <div class="it-brand-tagline d-none d-md-block">An official GJD HQ site
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="it-right-zone">
+                                    <div class="it-socials d-none d-md-flex">
+                                        <ul>
+                                            <li>
+                                                <a href="#" aria-label="Facebook" target="_blank">
+                                                    <svg class="icon">
+                                                        <use
+                                                            href="/bootstrap-italia/dist/svg/sprites.svg#it-facebook">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://github.com/gjdhq/" aria-label="Github" target="_blank">
+                                                    <svg class="icon">
+                                                        <use
+                                                            href="https://cdn.icon-icons.com/icons2/2428/PNG/512/github_black_logo_icon_147128.png">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" aria-label="Twitter" target="_blank">
+                                                    <svg class="icon">
+                                                        <use href="/bootstrap-italia/dist/svg/sprites.svg#it-twitter">
+                                                        </use>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="it-header-navbar-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!--start nav-->
+                            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+                                <button class="custom-navbar-toggler" type="button" aria-controls="navC1"
+                                    aria-expanded="false" aria-label="Mostra/Nascondi la navigazione"
+                                    data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                                    <svg class="icon">
+                                        <use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+                                    </svg>
+                                </button>
+                                <div class="navbar-collapsable" id="navC1" style="display: none;">
+                                    <div class="overlay" style="display: none;"></div>
+                                    <div class="close-div">
+                                        <button class="btn close-menu" type="button">
+                                            <svg class="icon">
+                                                <use
+                                                    href="https://gabrielsystem.altervista.org/wp-content/uploads/2024/06/icona.png">
+                                                </use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="menu-wrapper">
+                                        <ul class="navbar-nav">
+                                            <!-- Item menu -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                            <script type="text/javascript"
+                                src="https://www.protezionecivile.fvg.it/widgets/pcrfvgit_alert.js"></script>
+                            <div class="pcrfvgit_alert_widget" data-istatcode="93022"></div>
+                            <!--end nav-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <section class="it-hero-wrapper it-dark it-overlay">
-        <!-- Hero content omitted for brevity -->
+        <!-- - img-->
+        <div class="img-responsive-wrapper">
+            <div class="img-responsive">
+                <div class="img-wrapper"><img src="https://images.wsj.net/im-932111?width=620" title="titolo immagine"
+                        alt="descrizione immagine"></div>
+            </div>
+        </div>
+        <!-- - texts-->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="it-hero-text-wrapper it-overlay it-dark it-right-bottom">
+                        <h1 class="no_toc">GJD HQ Central department</h1>
+                        <h2 class="subtitle">Benvenuto al sito ufficiale del GJD HQ</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <div class="blog-container">
